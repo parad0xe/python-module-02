@@ -4,6 +4,21 @@ def garden_operations(
         key: str = None,
         filepath: str = None
 ) -> None:
+    """
+    Raise different type of errors
+
+    Args:
+        str_number: value to check ValueError and ZeroDivisionError
+        key: value to check KeyError
+        filepath: value to check FileNotFoundError
+
+    Raises:
+        ValueError
+        ZeroDivisionError
+        FileNotFoundError
+        KeyError
+        Exception
+    """
     try:
         if str_number is not None:
             int_number = int(str_number)
