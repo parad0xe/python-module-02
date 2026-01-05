@@ -4,6 +4,15 @@ MAX_TEMPERATURE = 40
 
 
 def check_temperature(value: str) -> bool:
+    """
+    Check if the given temperature is perfect for plants
+
+    Args:
+        value: The temperature to check
+
+    Returns:
+        True if the temperature is between 0 and 40, False otherwise
+    """
     try:
         print(f"\nTesting temperature: {value}")
         temperature = int(value)
