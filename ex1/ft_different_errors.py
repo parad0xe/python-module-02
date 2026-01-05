@@ -39,7 +39,7 @@ def garden_operations(
         print(f"Caught FileNotFoundError: No such file '{filepath}'")
     except KeyError:
         print(f"Caught KeyError: '{key}'")
-    except Exception:
+    except BaseException:
         print("Caught an error, but program continues!")
 
 
