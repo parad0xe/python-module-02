@@ -1,6 +1,12 @@
 
 
 def water_plants(plant_list: list[str]) -> None:
+    """
+    Water all plants in the provided list
+
+    Args:
+        plant_list: A list of plant names to be watered
+    """
     print("Opening watering system")
     try:
         for plant in plant_list:
@@ -12,6 +18,9 @@ def water_plants(plant_list: list[str]) -> None:
 
 
 def test_watering_system() -> None:
+    """
+    Test the water_plants function with valid and invalid plant lists
+    """
     valid_plants: list[str] = ["tomato", "lettuce", "carrots"]
     invalid_plants: list[str] = ["tomato", None, "carrots"]
 
