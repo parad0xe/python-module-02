@@ -68,10 +68,10 @@ def test_all_garden_errors() -> None:
 if __name__ == "__main__":
     print("\nTesting GardenError...")
     test_garden_error()
-    
+
     print("\nTesting PlantError...")
     test_plant_error()
-    
+
     print("\nTesting WaterError...")
     test_water_error()
 
